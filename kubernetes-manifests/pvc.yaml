@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: redis-cart-claim
 spec:
-  storageClassName: vsan-default-storage-policy
+  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:
@@ -16,7 +16,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: mongodata-claim-catalog
 spec:
-  storageClassName: vsan-default-storage-policy
+  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:
@@ -30,7 +30,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgredb-claim
 spec:
-  storageClassName: vsan-default-storage-policy
+  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:
@@ -43,7 +43,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: mongodata-claim-users
 spec:
-  storageClassName: vsan-default-storage-policy
+  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:
@@ -57,7 +57,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: users-cart-redis-claim
 spec:
-  storageClassName: vsan-default-storage-policy
+  storageClassName: default
   accessModes:
     - ReadWriteOnce
   resources:
